@@ -1,64 +1,37 @@
-<p align="center">
-<a href="https://easywechat.org/">
-<img src="https://easywechat.org/logo.svg" alt="EasyWeChat" width="160">
-</a>
+<img align="right" width="100" src="https://user-images.githubusercontent.com/1472352/49656357-1e874080-fa78-11e8-80ea-69e2103345cf.png" alt="EasyWeChat Logo" expires="2021-08-13" />
 
-<p align="center">📦 It is probably the best SDK in the world for developing Wechat App.</p>
+<h1 align="left"><a href="https://www.easywechat.com">EasyWeChat</a></h1>
 
-<p align="center">
-<a href="https://travis-ci.org/overtrue/wechat"><img src="https://travis-ci.org/overtrue/wechat.svg?branch=master" alt="Build Status"></a>
-<a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/v/unstable.svg" alt="Latest Unstable Version"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/wechat/build-status/master"><img src="https://scrutinizer-ci.com/g/overtrue/wechat/badges/build.png?b=master" alt="Build Status"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/wechat/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/wechat/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/wechat/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/wechat/badges/coverage.png?b=master" alt="Code Coverage"></a>
-<a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/license" alt="License"></a>
-</p>
+📦 也许是世界上最好用的微信开发 SDK。
 
-</div>
+[![Test Status](https://github.com/w7corp/easywechat/workflows/Test/badge.svg)](https://github.com/w7corp/easywechat/actions) 
+[![Lint Status](https://github.com/w7corp/easywechat/workflows/Lint/badge.svg)](https://github.com/w7corp/easywechat/actions) 
+[![Latest Stable Version](https://poser.pugx.org/w7corp/easywechat/v/stable.svg)](https://packagist.org/packages/w7corp/easywechat) 
+[![Latest Unstable Version](https://poser.pugx.org/w7corp/easywechat/v/unstable.svg)](https://packagist.org/packages/w7corp/easywechat)
+[![Total Downloads](https://poser.pugx.org/w7corp/easywechat/downloads)](https://packagist.org/packages/w7corp/easywechat) 
+[![License](https://poser.pugx.org/w7corp/easywechat/license)](https://packagist.org/packages/w7corp/easywechat) 
 
-<p align="center">
-    <b>Special thanks to the generous sponsorship by:</b>
-    <br><br>
-    <a href="https://www.yousails.com">
-      <img src="https://yousails.com/banners/brand.png" width=350>
-    </a>
-    <br><br>
-    <a href="https://laravist.com">
-      <img width="160" src="https://o0dpls1ru.qnssl.com/laravist.com-logo.png">
-    </a>
-</p>
+> 📣 **公告**
+> 
+>  为了更好的推进项目发展，保障项目更新迭代速度，EasyWeChat 正式并入微擎旗下，加上微擎团队的助力，将会为大家提供更强大更稳固更多元化的开源项目。
+>
+> - 微擎与 EasyWeChat 结合，基于微擎技术资源方面的优势，将积极发展 EasyWeChat 的开源社区，将为 EasyWeChat 开源项目注入巨大活力。
+> - EasyWeChat 原作者 overtrue 将继续担任开源项目的核心开发者，继续参与项目的发展规划，共同打造更强大的开源生态社区。
+> - 项目从 6.0 版本开始将修改包名为 `w7corp/easywechat`，5.x 及以下版本不受影响。
 
-<p align="center">
-<img width="400" src="http://wx1.sinaimg.cn/mw690/82b94fb4gy1fgwafq32r0j20nw0nwter.jpg">
-</p>
-
-<p align="center">关注我的公众号我们一起聊聊代码怎么样？</p>
-
-## Feature
-
- - 命名不那么乱七八糟；
- - 隐藏开发者不需要关注的细节；
- - 方法使用更优雅，不必再去研究那些奇怪的的方法名或者类名是做啥用的；
- - 自定义缓存方式；
- - 符合 [PSR](https://github.com/php-fig/fig-standards) 标准，你可以各种方便的与你的框架集成；
- - 高度抽象的消息类，免去各种拼json与xml的痛苦；
- - 详细 Debug 日志，一切交互都一目了然；
+> 🚨 注意：当前为 6.0 分支，处于新版开发中，请 PR 时往 5.x 提交，感谢您的贡献！
 
 ## Requirement
 
-1. PHP >= 5.5.9
-2. **[composer](https://getcomposer.org/)**
+1. PHP >= 7.4
+2. **[Composer](https://getcomposer.org/)**
 3. openssl 拓展
 4. fileinfo 拓展（素材管理模块需要用到）
-
-> SDK 对所使用的框架并无特别要求
 
 ## Installation
 
 ```shell
-composer require "overtrue/wechat:~3.1" -vvv
+$ composer require "w7corp/easywechat:^5.0" -vvv
 ```
 
 ## Usage
@@ -68,12 +41,11 @@ composer require "overtrue/wechat:~3.1" -vvv
 ```php
 <?php
 
-use EasyWeChat\Foundation\Application;
+use EasyWeChat\Factory;
 
 $options = [
-    'debug'     => true,
-    'app_id'    => 'wx3cf0f39249eb0e60',
-    'secret'    => 'f1c242f4f28f735d4687abb469072a29',
+    'app_id'    => 'wx3cf0f39249eb0exxx',
+    'secret'    => 'f1c242f4f28f735d4687abb469072xxx',
     'token'     => 'easywechat',
     'log' => [
         'level' => 'debug',
@@ -82,38 +54,42 @@ $options = [
     // ...
 ];
 
-$app = new Application($options);
+$app = Factory::officialAccount($options);
 
 $server = $app->server;
 $user = $app->user;
 
-$server->setMessageHandler(function($message) use ($user) {
-    $fromUser = $user->get($message->FromUserName);
+$server->push(function($message) use ($user) {
+    $fromUser = $user->get($message['FromUserName']);
 
-    return "{$fromUser->nickname} 您好！欢迎关注 overtrue!";
+    return "{$fromUser->nickname} 您好！欢迎关注!";
 });
 
 $server->serve()->send();
 ```
 
-更多请参考[http://easywechat.org/](http://easywechat.org/)。
+更多请参考 [https://www.easywechat.com/](https://www.easywechat.com/)。
 
 ## Documentation
 
-- Homepage: http://easywechat.org
-- Forum: https://forum.easywechat.org
-- 微信公众平台文档: https://mp.weixin.qq.com/wiki
-- WeChat Official Documentation: http://admin.wechat.com/wiki
-
-> 强烈建议看懂微信文档后再来使用本 SDK。
+[官网](https://www.easywechat.com)  · [教程](https://www.easywechat.com/tutorials)  ·  [讨论](https://yike.io/)  ·  [微信公众平台](https://mp.weixin.qq.com/wiki)  ·  [WeChat Official](http://admin.wechat.com/wiki)
 
 ## Integration
 
 [Laravel 5 拓展包: overtrue/laravel-wechat](https://github.com/overtrue/laravel-wechat)
 
-## Contribution
+## Contributors
 
-[Contribution Guide](.github/CONTRIBUTING.md)
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/w7corp/easywechat/graphs/contributors"><img src="https://opencollective.com/wechat/contributors.svg?width=890" /></a>
+
+
+## PHP 扩展包开发
+
+> 想知道如何从零开始构建 PHP 扩展包？
+>
+> 请关注我的实战课程，我会在此课程中分享一些扩展开发经验 —— [《PHP 扩展包实战教程 - 从入门到发布》](https://learnku.com/courses/creating-package)
+
 
 ## License
 
